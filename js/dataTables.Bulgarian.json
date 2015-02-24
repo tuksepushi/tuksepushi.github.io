@@ -1,0 +1,23 @@
+﻿{
+	"sEmptyTable":     "Не са намерени данни",
+	"sInfo":           "Показани са от _START_ до _END_ от общо _TOTAL_",
+	"sInfoEmpty":      "Показани са от 0 до 0 от общо 0",
+	"sInfoFiltered":   "(филтрирани от общо _MAX_)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ",",
+	"sLengthMenu":     "Show _MENU_ entries",
+	"sLoadingRecords": "Зареждане...",
+	"sProcessing":     "Моля, изчакайте...",
+	"sSearch":         "Търсене:",
+	"sZeroRecords":    "Не са намерени резултати",
+	"oPaginate": {
+		"sFirst":    "Първа",
+		"sLast":     "Последна",
+		"sNext":     "Следваша",
+		"sPrevious": "Предишна"
+	},
+	"oAria": {
+		"sSortAscending":  ": сортиране във възходящ ред",
+		"sSortDescending": ": сортиране в низходящ ред"
+	}
+}

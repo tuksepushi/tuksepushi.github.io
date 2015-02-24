@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Тук се пуши - Заведения в България, в които не се спазва забраната за тютюнопушене.</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- DataTables CSS -->
+	<link href="css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-59996381-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Тук се пуши</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#search">Търси нарушители</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">За идеята</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#help">Въпроси</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Контакт</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Заведения в България, в които не се спазва забраната за тютюнопушене.</div>
+                <div class="intro-heading"></div>
+                <a href="#search" class="page-scroll btn btn-xl">Търси нарушители</a>
+            </div>
+        </div>
+    </header>
+	
+	<!-- Search Section -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Търси нарушители</h2>
+                    <h3 class="section-subheading text-muted">Виж кои са местата, в които не се спазва забраната.</h3>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-lg-12">
+					<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="offenders"></table>
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">За идеята</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="service-heading">Защо?</h4>
+                    <p class="text-muted">
+                        Въпреки забраната за пушене на обществени места, в много заведения все още пушенето не е забранено. 
+                        <br> 
+                        Тъй като подаването на сигнали до контролните органи за момента не спира тази практика, е добре да знаем кои места да избягваме, за да не останем неприятно изненадани. 
+                        <br> 
+                        Надяваме се, че подобно начинание ще повиши интереса на гражданите към отстояване на правата им и ще накара отговорните институции да погледнат по-сериозно на проблема.                       
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <h4 class="service-heading">Как работи?</h4>
+                    <p class="text-muted">
+                        Като непушач, искам да избягвам заведения, в които се пуши.
+                        <br>
+                        За целта, искам лесно да мога да потърся дали на мястото, в което имам среща, пушенето е разрешено.
+                        <br>
+                        Можете да потърсите заведението по име или адрес.
+                        <br>
+                        Ако заведението присъства в списъка, това означава, че поне двама души са посочили, че там се нарушава забраната и правата на непушачите.
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <h4 class="service-heading">Събиране на информация</h4>
+                    <p class="text-muted">
+                        В списъка се добавят заведения, за които поне двама души са посочили, че се пуши.
+                        <br>
+                        При доказателство, че в заведението забраната се спазва, то ще бъде премахнато от списъка.                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Help Section -->
+    <section id="help">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Въпроси и отговори</h2>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="accordion" class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Как да се включа?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <div>Ако не си съгласен с нарушаване на забраната за тютюнопушене и искаш да допринесеш за спазването ѝ, ето как можеш да го направиш.
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <h5>Подай сигнал към контролните органи</h5>
+                                                <div>С подаване на сигнали до контролните органи, увеличаваме шанса да бъдат предприети мерки за разрешаване на проблема. </div>
+                                            </li>
+                                            <li>
+                                                <h5>Изпрати ни детайли за нарушителя</h5>
+                                                <div>Изпрати ни информация за заведението, в което си станал свидетел на пушене, за да обновим списъка.</div>
+                                            </li>
+                                            <li>
+                                                <h5>Изпрати ни обратна връзка</h5>
+                                                <div>Можеш да ни изпратиш коментари и предложения за сайта, за да го направим по-добър и да достигнем до повече хора. Всяко мнение е важно.</div>
+                                            </li>
+                                        </ul>      
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Как мога да подам сигнал на контролните органи?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <div>Има няколко начина да подадеш сигнал за нарушение на забраната за тютюнопушене
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <h5>Чрез платформата bezdim.org</h5>
+                                                <div>На сайта на <a href="http://bezdim.org" target="_blank">"България без дим"</a> ще намериш информация за подаване на сигнал по телефона (0700 20 009) или чрез <a href="https://bezdim.org/signali/reports/submit/" target="_blank">формата за сигнали</a>  на сайта.</div>
+                                            </li>
+                                            <li>
+                                                <h5>Сигнал до регионалната здравна инспекция</h5>
+                                                <div>Информация за контакт с вашата регионална здравка инспекция можете да намерите на сайта на <a href="http://www.mh.government.bg/Articles.aspx?lang=bg-BG&pageid=423&categoryid=836" target="_blank">Министерство на здравеопазването</a>.</div>
+                                            </li>
+                                        </ul>
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Търсенето на заведения, в които се пуши, няма ли да е от полза на пушачите?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        Възможно е, но вярваме, че информацията за заведенията - нарушители ще е по-полезна на хората, които искат да избягват дима, отколкото на тези, които искат да нарушават закона.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Question Template: <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse_">Как мога да подам сигнал на контролните органи?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse_" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Пиши ни</h2>
+                    <h3 class="section-subheading text-white">На посочения имейл адрес можеш да подадеш сигнал за заведение, в което се пуши, да потвърдиш за някое от вече добавените или да сигнализираш, ако някое място е добавено, без да е нарушител.</h3>
+                    <h3 class="text-white"><i class="fa fa-envelope"></i> tuksepushi <small>@</small> gmail <small>.</small> com</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; ТУК СЕ ПУШИ 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#" title="Скоро..."><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li>Тема: <a href="http://startbootstrap.com/template-overviews/agency/" target="_blank">Start Bootstrap Agency</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/site.js"></script>
+	
+	<!-- DataTables -->
+    <script src="js/jquery.dataTables.min.js"></script>
+	
+	<!-- Data -->
+    <script src="js/data.js"></script>
+
+</body>
+
+</html>
